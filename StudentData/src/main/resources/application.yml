@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/flipkart
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect#  boot:#    admin:#      client:#        url:#        - http://localhost:8512#        instance:#          service-base-url:   boot:    admin:      client:        instance:          service-base-url: http://localhost:8512  
+
+springdoc:  api-docs:    path: /student-api-docs 
+management:  endpoints:    web:      exposure:        include:        - "*"
+  endpoint:    health:      show-details: always
+
+    
